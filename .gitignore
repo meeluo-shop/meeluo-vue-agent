@@ -4,6 +4,7 @@ node_modules
 .github
 .git2
 script
+
 dist
 .env.local
 .env.*.local
