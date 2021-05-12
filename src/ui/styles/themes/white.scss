@@ -1,0 +1,205 @@
+/**
+ * @author knows 1002563923@qq.com
+ * @description 碰触纯白主题（VIP群专享）
+ */
+
+.theme-white {
+  $base-menu-background: #fff;
+  $base-menu-background-active: #1890ff;
+  $base-color-blue: #1890ff;
+
+  @mixin container {
+    color: $base-color-black !important;
+    background: $base-menu-background !important;
+  }
+
+  @mixin active {
+    &:hover {
+      color: $base-color-white !important;
+      background-color: $base-menu-background-active !important;
+    }
+
+    &.is-active {
+      color: $base-color-white !important;
+      background-color: $base-menu-background-active !important;
+    }
+  }
+
+  .logo-container-horizontal,
+  .logo-container-common {
+    @include container;
+
+    .svg-icon,
+    .title {
+      @include container;
+    }
+  }
+
+  .logo-container-vertical {
+    @include container;
+
+    .svg-icon,
+    .title {
+      @include container;
+    }
+  }
+
+  .logo-container-comprehensive {
+    @include container;
+
+    .svg-icon,
+    .title {
+      @include container;
+    }
+  }
+
+  .logo-container-gallery {
+    @include container;
+
+    .title,
+    .svg-icon {
+      @include container;
+    }
+
+    .logo {
+      border-right: 1px solid rgba(0, 21, 41, 0.08) !important;
+      @include container;
+    }
+  }
+
+  .gallery-bar-container {
+    .el-tabs {
+      border-right: 1px solid rgba(0, 21, 41, 0.08) !important;
+      @include container;
+
+      .el-tabs__item,
+      .el-tabs__nav {
+        @include container;
+      }
+
+      .el-tabs__item.is-active,
+      .el-tabs__item:hover {
+        color: $base-color-white !important;
+        background: $base-menu-background-active !important;
+      }
+    }
+
+    .el-menu {
+      .el-menu-item.is-active,
+      .el-submenu__title.is-active,
+      .el-menu-item:hover,
+      .el-submenu__title:hover {
+        i {
+          color: $base-menu-background-active !important;
+        }
+
+        color: $base-menu-background-active !important;
+        background-color: rgba($base-color-blue, 0.1) !important;
+      }
+    }
+  }
+
+  .layout-container-vertical,
+  .layout-container-horizontal,
+  .layout-container-comprehensive,
+  .layout-container-common {
+    .el-menu {
+      @include container;
+
+      .el-submenu__title {
+        @include container;
+      }
+
+      .el-menu-item {
+        @include container;
+      }
+    }
+
+    .side-bar-container,
+    .comprehensive-bar-container {
+      @include container;
+      box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08) !important;
+
+      .el-menu-item {
+        @include active;
+      }
+    }
+  }
+
+  .top-bar-container {
+    @include container;
+
+    .right-panel {
+      .user-name,
+      .user-name *,
+      > i,
+      > div > i,
+      > span > i,
+      > div > span > i {
+        @include container;
+      }
+    }
+
+    .vab-main {
+      @include container;
+
+      .el-menu {
+        &--horizontal {
+          .el-submenu,
+          .el-menu-item {
+            &.is-active {
+              color: $base-color-white !important;
+              background-color: $base-menu-background-active !important;
+            }
+          }
+
+          > .el-menu-item {
+            &.is-active {
+              color: $base-color-black !important;
+              border-bottom: 3px solid $base-menu-background-active !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tags-bar-container {
+    background: $base-color-white;
+    border-top: 1px solid #f6f6f6;
+
+    .tags-content {
+      .el-tabs__header {
+        .el-tabs__item {
+          &.is-active {
+            background: $base-color-blue !important;
+            border: 1px solid $base-color-blue !important;
+
+            &:hover {
+              color: $base-color-white !important;
+            }
+          }
+
+          &:hover {
+            color: $base-color-blue !important;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-bar-container {
+    .el-tabs__item.is-active,
+    .el-tabs__item:hover {
+      color: $base-color-blue !important;
+    }
+
+    .el-tabs__active-bar {
+      background-color: $base-color-blue !important;
+    }
+  }
+
+  .theme-setting {
+    background: $base-color-blue !important;
+  }
+}

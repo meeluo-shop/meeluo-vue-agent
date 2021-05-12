@@ -1,0 +1,159 @@
+/**
+ * @author knows 1002563923@qq.com
+ * @description 荣耀典藏主题（VIP群专享）
+ */
+
+.theme-glory {
+  $base-menu-background: #2e2f34;
+  $base-menu-background-active: #f6ca9d;
+  $base-color-blue: #f6ca9d;
+
+  @mixin container {
+    background: $base-menu-background !important;
+  }
+
+  @mixin active {
+    &:hover {
+      color: $base-color-white !important;
+      background-color: $base-menu-background-active !important;
+    }
+
+    &.is-active {
+      color: $base-color-white !important;
+      background-color: $base-menu-background-active !important;
+    }
+  }
+
+  .logo-container-horizontal,
+  .logo-container-vertical {
+    @include container;
+  }
+
+  .logo-container-comprehensive {
+    @include container;
+  }
+
+  .logo-container-gallery {
+    .logo {
+      @include container;
+    }
+  }
+
+  .gallery-bar-container.el-scrollbar {
+    .el-tabs {
+      .el-tabs__nav {
+        @include container;
+      }
+
+      .el-tabs__item.is-active,
+      .el-tabs__item:hover {
+        background: $base-menu-background-active !important;
+      }
+    }
+
+    .el-menu {
+      .el-menu-item.is-active,
+      .el-submenu__title.is-active,
+      .el-menu-item:hover,
+      .el-submenu__title:hover {
+        i {
+          color: $base-menu-background-active !important;
+        }
+
+        color: $base-menu-background-active !important;
+        background-color: rgba($base-color-blue, 0.1) !important;
+      }
+    }
+  }
+
+  .layout-container-vertical,
+  .layout-container-horizontal,
+  .layout-container-comprehensive,
+  .layout-container-common {
+    .el-menu {
+      @include container;
+
+      .el-submenu__title {
+        @include container;
+      }
+
+      .el-menu-item {
+        @include container;
+      }
+    }
+
+    .side-bar-container,
+    .comprehensive-bar-container {
+      @include container;
+
+      .el-menu-item {
+        @include active;
+      }
+    }
+  }
+
+  .top-bar-container {
+    @include container;
+
+    .vab-main {
+      @include container;
+
+      .el-menu.el-menu {
+        &--horizontal {
+          .el-submenu,
+          .el-menu-item {
+            &.is-active {
+              background-color: $base-menu-background-active !important;
+            }
+          }
+
+          > .el-menu-item {
+            &.is-active {
+              background-color: transparent !important;
+              border-bottom: 3px solid $base-menu-background-active !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tags-bar-container {
+    background: $base-color-white;
+    border-top: 1px solid #f6f6f6;
+
+    .tags-content {
+      .el-tabs__header {
+        .el-tabs__item {
+          &.is-active {
+            background: $base-color-blue !important;
+            border: 1px solid $base-color-blue !important;
+
+            &:hover {
+              color: $base-color-white !important;
+            }
+          }
+
+          &:hover {
+            color: $base-color-blue !important;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-bar-container {
+    .el-tabs__item.is-active,
+    .el-tabs__item:hover {
+      color: $base-color-blue !important;
+    }
+
+    .el-tabs__active-bar {
+      background-color: $base-color-blue !important;
+    }
+  }
+
+  .theme-setting {
+    background: $base-color-blue !important;
+  }
+}
