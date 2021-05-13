@@ -49,7 +49,7 @@
 | vue3        | 高性能前端框架                                                         |
 | Taro3       | 跨平台前端框架                                                         |
 | element-ui  | 管理后台 UI 组件库                                                     |
-| WebAssembly | 浏览器端高性能解码、加密方案 基于 swagger，更便于国人使用的 swagger ui |
+| WebAssembly | 浏览器端高性能解码、加密方案 |
 
 ## 相关截图
 
