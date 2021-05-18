@@ -26,7 +26,7 @@
 
 ## 演示地址
 
-商家后台：http://merchant.meeluo.com/index.html 账号 15888888888 密码 123456
+商家后台：http://merchant.meeluo.com/index.html （关注下方公众号回复：后台密码，即可看到）
 
 移动端：1. 扫描二维码
 
